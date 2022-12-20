@@ -19,9 +19,9 @@
                         <section class="left">{{ $train->stazione_arrivo }} , {{ $train->codice_treno }}</section>
                         <section class="center">{{ $train->ora_partenza }}</section>
                         <section class="right">
-                            @if ($train->status = 1)
+                            @if ($train->status = '1')
                                 <div class="in_orario"></div>
-                            @elseif ($train->status = 0)
+                            @elseif ($train->status = '0')
                                 <div class="in_ritardo"></div>
                             @endif
                         </section>
